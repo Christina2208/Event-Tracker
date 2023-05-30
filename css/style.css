@@ -17,7 +17,6 @@
 }
 
 .left{
-    background-color: blueviolet;
     padding-left: 20px;
     padding-top: 20px;
 }
@@ -34,7 +33,6 @@
 }
 
 .right{
-    background-color: orange;
     padding-top: 20px;
 }
 
@@ -62,4 +60,11 @@
     padding-top: 10px;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+
+.cardInfoStyle{
+    background-color: orange;
+    width: 100%;
+    height: auto;
+    border: 1px solid black;
 }

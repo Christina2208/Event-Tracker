@@ -3,6 +3,7 @@ let searchBtn = document.getElementById("searchBtn");
 let cityName = document.querySelector(".cityName");
 let eventContainer = document.getElementById("event-container");
 let historyItems = document.querySelector(".historyItems");
+let eventInfoDiv = document.querySelector(".eventInfoDiv");
 
 searchBtn.addEventListener("click", searchFunc);
 
@@ -33,11 +34,26 @@ fetch("https://app.ticketmaster.com/discovery/v2/events.json?city=["+value+"]&si
 
             eventContainer.appendChild(cardObject)
 
-            
+//made card clickable *only blue part*
+    eventContainer.addEventListener("click", function(e){ 
+        if(e.target.tagName==="DIV"){
+            const div = e.target;
+                if(div.className==="card"){
+                    eventInfo();
+                }
+                }
+            })
         })
-        });
-    }
+    });
+}
 
+//this appends the child for cardInfo *need to add link to buy ticket and google maps API*
+function eventInfo(){
+
+let cardInfo = document.createElement("div")
+cardInfo.className="cardInfoStyle"
+eventInfoDiv.appendChild(cardInfo)
+}
 
 
 //function for setting storage
