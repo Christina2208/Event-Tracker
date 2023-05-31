@@ -9,7 +9,6 @@
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/skeleton.css">
-    <!-- <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvUSMreJT32LU9jP9Zeet-VYDoEEK0gUI&callback=initMap"></script> -->
 
 </head>
 
@@ -32,11 +31,13 @@
 
             <div class="nine columns right">
                 <h2 class="headerTwo">Events in <span class="cityName"></span></h2>
-                <div class="eventInfoDiv"></div> <!-- eventInfo will go inside this div-->
+                <div class="eventInfoDiv"></div> <!-- address from clicked button will go inside this div-->
+                <div id="map"></div> <!--map goes here-->
                 <div id="event-container"></div> <!--All event cards go here-->
             </div>
         </div>
 
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvUSMreJT32LU9jP9Zeet-VYDoEEK0gUI&callback=initMap"></script>
     <script src="./script.js"></script>
 </body>
 </body>

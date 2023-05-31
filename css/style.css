@@ -62,9 +62,12 @@
     justify-content: space-between;
 }
 
-.cardInfoStyle{
-    background-color: orange;
-    width: 100%;
-    height: auto;
-    border: 1px solid black;
+#map{
+    width: 99%;
+    height: 250px;
+    display: block;
+}
+
+.eventInfoDiv{
+    font-size: 20px;
 }
